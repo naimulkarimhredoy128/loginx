@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="main.css">
+    <title>Welcome!Login and Register</title>
+</head>
+<body>
+    <div class="login-page">
+        <div class="form">
+            <form class="register-form">
+            <input type="text" placeholder="user name"/>
+            
+            <input type="text" placeholder="password"/>
+            
+            <input type="text" placeholder="email id"/>
+            
+            
+            <button>Create</button>
+            <p class="massage">Already Registered? <a href="#">Login</a></p>
+            </form>
+            
+            <form class="login-form">
+                <input type="text" placeholder="username" name="userid"/>
+                
+                 <input type="password" placeholder="password" name="pswrd"/>
+                 <button onclick="check(this.form)">login</button>
+                 
+                  <p class="massage">Already Registered? <a href="#">Register</a></p>
+            </form>
+            
+        </div>
+        
+    </div>
+    
+    
+    <script src=" https://code.jquery.com/jquery-3.5.0.min.js"></script>
+        
+        <script>
+        $('.massage a').click(function(){
+            $('form').animate({height:"toggle",opacity:"toggle"},"slow");
+        })
+    
+    function check(form)
+        {
+            if(form.userid.value=="Naimulx"&&form.pswrd.value==123)
+                {
+                    window.open("https://naimulkarimhredoy128.github.io/weather-projectX/")
+                    
+                }
+            else{
+                alert("The Userid and Password You Entered Didn't Match....Try Again.")
+            }
+        }
+    
+    </script>
+</body>
+</html>
